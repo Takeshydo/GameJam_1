@@ -1,0 +1,47 @@
+# ============================
+# FICHIER .GITATTRIBUTES UNITY
+# ============================
+
+# Force les fins de ligne en LF (meilleur pour Unity)
+* text=auto eol=lf
+
+# ============================
+# TRAITEMENT DES FICHIERS UNITY
+# ============================
+
+# Utilise l'outil de fusion Unity SmartMerge (UnityYAMLMerge)
+*.unity     merge=unityyamlmerge eol=lf
+*.prefab    merge=unityyamlmerge eol=lf
+*.asset     merge=unityyamlmerge eol=lf
+*.mat       merge=unityyamlmerge eol=lf
+*.anim      merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+*.meta      merge=unityyamlmerge eol=lf
+ProjectSettings/*.asset merge=unityyamlmerge eol=lf
+
+# Ignore les fichiers binaires pendant les merges
+*.dll       binary
+*.exe       binary
+*.png       binary
+*.jpg       binary
+*.tga       binary
+*.psd       binary
+*.fbx       binary
+*.mp3       binary
+*.wav       binary
+*.ogg       binary
+*.zip       binary
+
+# ============================
+# AUTRES CONFIGS UTILES
+# ============================
+
+# Empêche Git de convertir les fins de ligne des binaires
+*.png -text
+*.jpg -text
+*.fbx -text
+*.mp3 -text
+*.wav -text
+
+# Conserve les scripts C# lisibles
+*.cs text diff=csharp

@@ -1,0 +1,69 @@
+# ============================================
+# Unity 6.2 - .gitignore officiel et optimisé
+# ============================================
+
+# --- Unity généré automatiquement ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# --- Crash Reports et autres fichiers système ---
+MemoryCaptures/
+*.stacktrace
+sysinfo.txt
+
+# --- Packages et cache ---
+Packages/com.unity.package-manager.cache/
+# Garder le manifest pour les dépendances
+!Packages/manifest.json
+!Packages/packages-lock.json
+
+# --- Cache d’asset ---
+*.pidb
+*.suo
+*.user
+*.userprefs
+*.csproj
+*.unityproj
+*.sln
+*.dll
+*.exe
+*.apk
+*.aab
+*.app
+*.ipa
+*.xcodeproj
+*.xcworkspace
+
+# --- Visual Studio / Rider ---
+.vs
+.vscode/
+.idea/
+*.DotSettings.user
+
+# --- Logs / Profiler ---
+*.log
+*.tlog
+*.profiler
+
+# --- Collaboration et Cloud ---
+.terraform/
+.collabignore
+.collab/
+*.collabmeta
+
+# --- Addressables ---
+/ServerData/
+/BuildServerData/
+
+# --- Autres fichiers temporaires ---
+.DS_Store
+Thumbs.db
+
+# --- TextMesh Pro ---
+[Tt]extMesh Pro/Fonts/Assets.meta
+[Tt]extMesh Pro/Fonts/Assets/
